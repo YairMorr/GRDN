@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#login-wrapper {
+	height: 80px;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+#login-wrapper button {
+	font-size:15px;
+	padding:6px 20px;
+	margin: 0px 10px;
+}
+
+#login-wrapper #user-image {
+	border-radius: 50%;
+}

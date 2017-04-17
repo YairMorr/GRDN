@@ -11,6 +11,14 @@
   },
   "permissions": [
     "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+    "https://ajax.googleapis.com/",
+    "https://github.com/login/oauth/access_token",
+    "tabs"
+  ],
+
+  "content_scripts": [{
+    "matches":["https://github.com/robots.txt*"],
+    "js":["libs/chrome-ex-oauth2/injection.js"],
+    "run_at":"document_start"
+  }]
 }
